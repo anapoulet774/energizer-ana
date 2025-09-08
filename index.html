@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="main.js/"></script>
 </head>
 
 <body>
@@ -41,49 +42,50 @@
   </header>
   </ul>
 
-
-  <div id="carruselEjemploOscuro" class="carousel carousel-slide oscuro">
+<div id="carruselEjemploOscuro" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carruselEjemploOscuro" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carruselEjemploOscuro" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carruselEjemploOscuro" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="10000">
-        <video class="d-block w-100" controls>
-          <source src="video/videoplayback (1).mp4" type="video/mp4">
-          Tu navegador no soporta el tag de video.
-        </video>
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Etiqueta de la primera diapositiva</h5>
-          <p>Algo de contenido de marcador de posición representativo para la primera diapositiva.</p>
+        <div class="carousel-item active" data-bs-interval="false">
+            <video id="myVideo" class="d-block w-100" controls muted autoplay>
+                <source src="video/videoplayback (1).mp4" type="video/mp4">
+                Tu navegador no soporta el tag de video.
+            </video>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Etiqueta de la primera diapositiva</h5>
+                <p>Algo de contenido de marcador de posición representativo para la primera diapositiva.</p>
+            </div>
         </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <img src="https://energizerindustrial.com/wp-content/uploads/2020/11/group1_ENR_HDINFLRP_Vision_Industrial_Rechargeable_Headlamp_Product-Image_Left.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Etiqueta de segunda diapositiva</h5>
-          <p>Algo de contenido de marcador de posición representativo para la segunda diapositiva.</p>
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://energizerindustrial.com/wp-content/uploads/2020/11/group1_ENR_HDINFLRP_Vision_Industrial_Rechargeable_Headlamp_Product-Image_Left.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Etiqueta de segunda diapositiva</h5>
+                <p>Algo de contenido de marcador de posición representativo para la segunda diapositiva.</p>
+            </div>
         </div>
-      </div>
-      <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Etiqueta de tercera diapositiva</h5>
-          <p>Algo de contenido de marcador de posición representativo para la tercera diapositiva.</p>
+        <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Etiqueta de tercera diapositiva</h5>
+                <p>Algo de contenido de marcador de posición representativo para la tercera diapositiva.</p>
+            </div>
         </div>
-      </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carruselEjemploOscuro" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
+    <button class="carousel-control-next" type="button" data-bs-target="#carruselEjemploOscuro" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
     </button>
-  </div>
+</div>
+
+<script src="carrusel.js"></script>
 
   <h1 style="color: blue;"> Encabezado</h1>
   <h2> Hola qué tal</h2>
