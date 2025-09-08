@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=" UTF-8">
+  <title> Ana aprendiendo HTML basico</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+  <header class="header-fijo">
+    <nav class="navbar navbar-black bg-black fixed-top">
+      <div class="container-fluid">
+        <a class="title" style="color:#ff0b0b;font-size:xx-large;
+  font-weight: bolder; ">ENERGIZER</a>
+        <a class="nav-link" href="#">no sé</a>
+        <a class="nav-link" href="#">algo así</a>
+        <a class="nav-link" href="#">coso</a>
+        <a class="nav-link" href="#" role="button" aria-expanded="false">
+          Otras Marcas
+        </a>
+
+        <!-- Formulario de búsqueda -->
+        <form class="search-form" id="search-form">
+          <input type="text" id="search-input" class="search-input" placeholder="Buscar...">
+          <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- Contenedor para mostrar los resultados de la búsqueda -->
+    <div id="loading-indicator">Cargando...</div>
+    <div id="results-container"></div>
+  </header>
+  </ul>
+
+
+  <div id="carruselEjemploOscuro" class="carousel carousel-slide oscuro">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <video class="d-block w-100" controls>
+          <source src="video/videoplayback (1).mp4" type="video/mp4">
+          Tu navegador no soporta el tag de video.
+        </video>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Etiqueta de la primera diapositiva</h5>
+          <p>Algo de contenido de marcador de posición representativo para la primera diapositiva.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="https://energizerindustrial.com/wp-content/uploads/2020/11/group1_ENR_HDINFLRP_Vision_Industrial_Rechargeable_Headlamp_Product-Image_Left.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Etiqueta de segunda diapositiva</h5>
+          <p>Algo de contenido de marcador de posición representativo para la segunda diapositiva.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Etiqueta de tercera diapositiva</h5>
+          <p>Algo de contenido de marcador de posición representativo para la tercera diapositiva.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <h1 style="color: blue;"> Encabezado</h1>
+  <h2> Hola qué tal</h2>
+
+
+
+  <p> Esto es un párrafo y lo voy a copiar</p>
+  <p> Esto es un párrafo y lo voy a copiar</p>
+  <p> Esto es un párrafo y lo voy a copiar</p>
+  <p id="párrafo">Omg estoy escribiendo por fuera,<br>
+    y se ve igual, buenísimo.
+    Ahora no.</p>
+
+  <pre style="color: aliceblue;">
+            Puedo escribir lo que quiera
+            y saltar de línea sin necesidad
+            de meter br
+         </pre>
+
+  <ul>
+    <li id="enc-3">HTML</li>
+    <li class="enc-green">Algo más</li>
+    <li class="enc-green">Un poco más</li>
+    <li>Y uno más</li>
+  </ul>
+  <ol>
+    <li id="enc-3">Ahora otra cosa</li>
+    <li>Otra cosa</li>
+    <li>Una más</li>
+    <li>Y la última</li>
+  </ol>
+
+
+  <img alt="Imagen de un helado" width="100"
+    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAzgMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQYBBAcDAgj/xAA6EAABAwIEBAMGBQQABwAAAAABAAIDBBEFEiExBhNBUSJhcRQygZGhsSNCwdHwBxUz4SRSU2JygrL/xAAZAQEAAwEBAAAAAAAAAAAAAAAAAgMEBQH/xAAjEQEAAgEFAAEFAQAAAAAAAAAAAQIRAwQSITFBIjIzQlFh/9oADAMBAAIRAxEAPwDuKIiAiIgIiICIiAsXWV5TzMgifLK4MjYLucTsEH254AJN9BdcJ4j/AKg1uLVz4qWuqaaHdkFEfG5vdxAJ/RXDGuKqiuldHSl8VKdmg5XO8yf0UFC6gpI2xsjgpW5SbNaGgAanUdLKm2rC+mjPqkzYpiXNa9uL4jC86Rtq3vAPlc/stuDjPGaWURVFXVRTAbxyuHxy3sVacQ9hdRGauaHwWF3NiLsrXdd9v5oqrjmCezQte9nMw54Do5AfHT3GhHdt/kq4tFvF3Hj7HSxYf/U7G6ItNS6CtpwL3eMpt6hdN4Y4vw7iCCN0buTUPuOS863G9u6/OL4paSpNNUEu0Do3g2Dh3V34aoY6/BuZFSslqKeY5zHK5koHRzXC2o9UrqWicS8vo1muau8NcHbLKpnB3GMGIyw4XUTmWryHJORYy5dCHDo8deh3HYXIFaYmJ8ZJiY9ZREXrwREQEREBERAREQEREBERAREQfJdbtZc747x2qnmqcOowAyG2xBL32667X0+BVx4iqIocKnEuINoHyNyxzZgCHdMt9z5LkNW54rKiWd5bTtaBmeffdoST8wB6OVOpbHS7Spnt44S+pmoy+vLSYiBJUB4AaCbZrX2W9C8vbmaGOY0WbJFYhwPRQrMNp34jJUTSv5L/APJSgkanw3PcHt6LR4dosTwvFXU7ZDMypa5rC03tp73i33VOGnK4w5AMoYOWGgENNm2udLdv2XlBh4pmuo43CXDps34biSad5N9Cd2a7d1EQcRVdPNlxbCKmBxeQ9zWhtxckODTa63sC4gp8cmfA5joKqJ5e2PNpIy1s37jvZRmJ9SzE9KPxLB/astFI1/glJp3jW0Z/Ke1tFeeCGNoH009LIJ6LE4zYZgXRSNF7G3S19VtYpglLjFNyqmN1h4s43B20PVenC/DNJg0wlMxkcAcjnOsG+g2upzaJjtCImOlgw/B6CPimDFnv5JAJIAGWR+wJPQ7+uiv7dlTQ5wyvjsHDxDS4vuprhesxCtwzn4lC2OQnwgdR3UtC36qtxT9k0iwNllaWYREQEREBERAREQEREBEWEBamK18WGYfUVs/+OFhcfPsPidFtO01XMeMOJ5qjF58GMlO6ikYRGWC7jILEA/I/RQvetPU6adr+KdjeL1dZxVhddiZzMmDnMJPhidr4W9tLeuq2K+Z0zgIYxJDLpI09/wAtvmVD1crZaeWnliiqA8kc65dyz3A7g99lX5RiOGtEkhirKcfme0uLfMi/1ULVzK6lsRhZqmtfG/8AHD4/FYsMZaSbeY16Fe1JWQZyGvyu8Jc5rstj1On6Kv0eOMqIclfO+LQXaHkxn56X+qxLRQlmeiq3tAOhcGuHztf6qE6cynGpELtTYk2UyU80gqbNuyN7bPjbYX9Re9iFmlw+hhFRAaRkjHuDsksZNwejSddNTvv2VGbLJPK0T1FDK9hc4fiGJxPW5HTTZbLOJjATBBPWQtzNfy2ytkYRfXxWzDTtZV8LQsi1ZdHpY2MjaGZg1pu0PcSWeQJ+ykoJG2L7hzHDQkadtlTaHiLC5oonMqGxtiLiYpo81wRtc/PrspSHiekcDy+a4fmcy1nn0OqhKeFsY4BuU2BAIBvfNbqvKTG5+HoZ6mKndVRkhzoM4aWtHvObf4aKmS8XYlTVDXRU7aiN1gIRE4OI13IPp0THTLjuDPFfgFbFFG/nlzKhsVtDfUg6EeSViYtyRtETXjLqGB8WYZjEd4Zch0uH6WJ6HsVPA3C/O0FbWTcrDcPjh5ZcI4oCXWF9Bc5r37nRXnhCvxTC8Xp6F9Y2qpJH8qaASuf7K4gkEF2tullprrRacYZr7eaxnLqSLA2WVeziIiAiIgIiICIiAiIg+JBdpHcWX5543wispcYjDBmJmsfIg338wLr9DkXsqJx5h45kuZtoq5mTMG3ySbX/AJ2WXcx1F/41bS/G01/rmVbhuHYkXP5eSTQyviNiTbY23NrLxoMPpm0jntL4WyOsxsj72ANuve31CxWYZimCQT1lEI6iAzZZn636WeR0B666LWnxSXETIIIc7YHBzpGnS/l30UKXzHS69IiUbXYO3nubBaOYHNyn+68d2lR8s72x8irim8H5LmwU5NPR11M5z53xyDxMeb5oz5eX3ULXvrZnchz4ZzH1hNy/4K3OVbXZ7EwXNKNf+4/ZesNRSDRlK3N00UaBNLJkaxzng+7bVXHA8FdDA2SZl5ZDlDgL2PZvmBfX5dVG1eu5Ti3fjyoKHDZyxtTVexzPHhE8BaHf+wcR8wpWXg2vawPpHNkadQY5QR8Ccp+ii8VwF7mlzXOzCx8164BiWL4I4mRkk9Kz32Aagd7KMUiSb2SuEYNjlLO0SYdFJG0WcZqgt+xP2VjmoaappxSTCVxOpggxMOdf/wAXloVflx+XGX8ilbJMx5FmRgiME9HO6/ZTo4JEtC41FVGJLXayOJpYD2N9SvLX06/TMkVvbtV5YRhGKwyQc+N8TrmGqjyP08wMpBHUFdc4CwKjGEYdiji588kDXu6DPaxJ7m91yNr/AGhpop3zfhSuYLG+Ug20v0K71wrRHDuHqGkcCDHHs7cXJP6qzRri2Ve4vmsR8pUbLKItLIIiICIiAiIgIiICIiAonieibW4TOMpdJEOay29266KWXy70UbRmMPa2ms5hyB7WTuNLO61y4i20je/1UFieAU7MAiwqnY2KqhYZRI0XLnE3s472P6BW/iPDDR4vJHC3UDmRDoWOOrfgdlCzzx1FfUG+WSMhjZW7jTqOoXInlp2xDsRMXrlVpsPxGnpI56imkEBbYlniDfUBajaemlY5kbSwEWcW7n/SuVVNVU0kBvI8Bnikj2JP6L25eHYzHMammhjkAuJ2XZc7DNbf43Vsbif2QnR/ioYZhXuubU+0kbBwAeOwud/ipjDYJI6ZwrWNe8Ot44spDRsPUFYfwvWtYXFsNQzMTdj7usL2PxUZLxBV0bzTSVAqHsOTJI27m+V9/vurOcW8lDjj2E/UzMZERI1pGux2WlRQMxSu5fO9mpoz+LMwfID/AGtvCMOGNxNlxYyUDJRlbCJDneem+wPZWCmwkYfSxtZTNEMbLuazZzvJU6uvx6hbTSzPbb4fwz+24RBR0UrZ4I2uJdlHicTfp5rap6flTPeBkyt103cdfoFq0NMaKmvHIY6gnPK5mmZ56W7DQKbglebR1MQkcWeJw019FkjNpStPHxv4Dh1PlNS+mhMrj7/LGa/qp0bLxo4hFTsa0WG9l7ruaNeNIhyNS3K0yIiK1AREQEREBERAREQEREBYWUQVfjWiMrKaqaCDE+ziN8p/2AqCykZWcuQuMNWHkSC3vC+x+HVderKdtVTywSe7I0grl00BgDzIAyqp2uiJc62boCf53XP3VOM8nQ2l8xxV6omlixGokkEsLXO/DP5co2WxNVRspY4poS8zDM7lHJp09V8wTysDKCoiyTuOQRzDQ6rSxC1bWysoY6l5hHLaIm5hlH2CzYj5a8tikrGOc6nwuSZ8rm2bFINQ4+d7fVa2FUJlxVkuKyUsM0Re2Npabk23Jva/ZZwSh/t1SX11RHFJJfKCQcpI6nYHyW4cIc/ED7a5slJA3mXY0kv9R/N1HPHxKMSkcKwySmdNVTgyTF2WJ+7WNtv6qRoOZHX8qjle2mhb+JGXXa5x2Cj4MZrKaQSU7mPZI4NZA9tx6NIVqikpOc8TQcsusXSs1aHeSpmJj5Jn/HvTTtlJiqIW3isc7NiTsLKSo6WOSUOZJdrj9FrQ0JbHdhDzc69bqVwunLHuLgQWiwutG3pyvETDHrXiInCTGyygRdlzhERAREQEREBERAREQEREBERBiyoPHeHFs7nx2b7UW5SRpnBFx8dFf1C8V0TazBpgRd0RErT2IN/tdU69OdMLdG/G8S5lNViOmqJqiIZ6VhcLt1BtbRRnD8jMPhrJxK9wlymzh4gSbn1UrxIxk9LHQ1Uz2CodYSR22Avr8dFFvpIKuCHll0IiAa4f9Qd/VcvrGHVx3lluEmtl5kdU2WhkJc59/HpuFs0OKugkk9lbGKUDLynDS3c9j+4XhBXyU8oipCII4b3bltf/AEpZjaPH4opZIPZnCSz3tFmy6aajfVeWzh78pHDxRVr2V0jRSSuYQwO/+tNNVLR4dKHxMvnjvmLm637LRZRzwvc97Q8OsG5ToeynaSA08LGtkLCDchuxJVMfVLy9uPkvaABrtLtI36XKnKJpEDS43ceqj2OD3MY/K5xOpAUswBrQBsF09rXvLna9svpERbmYREQEREBERAREQEREBERAREQF8PaHNLXC7XaEd19rCDknGdJHQzOgmIEcTwYyAb2JuP2VRrMQkfaV5ijg0LHsGgPW6u39SpJW40Gzn/hjGMthsDufPVUOJphLxM5royTaIDRw7rm2pFbS6lLzakJige7EaY/3KJnKFhHNmyvI9FYaaCSNjXNdFJSMbpyXXLbDsqzBzJJGSMdmIH+I9PRTWEB753TMcYs7TljGmndyz3hdWek7hYqWyOlDizP7sTtWgdyO5Vhp6lsriySPVtrujOh+Ch6Koa6WNkkIDn+65h1Pnb9VIU1ow2OGQOtuDoR3KhFseoXjKWoWRvnBjeTlucpGo9VKhaGDwOZE+ST35HfTopFdbb1xRzNWc2ERFerEREBERAREQEREBERAREQEREBYWUQUz+pGHsnoIa4gXp3ZXXFxZ2gJ8g63zXK52tmPLqx4wbB7d2Hy8l36vpGV1DUUs3uTRljviLLiGIUz6WZ9PIWisjc5gLttOl/tdY9euJy27a2Yw0qZkkUgfPmLm+6QNPUnorFQV9or1MTZANA61nAnseqrcVW6JzmODmyXu+Nw3PRTuHMp5Klj2yNpp8nhjdqxjjufJYtTpsostEYxLIRK3ObDI/wuy9gt8ue92Usd4tNVERiSONrJWscCLlx1GW/1upzBA6qrYywnIDmIvcC2yqpHK0Qak8azZaqOPlU0cf8AytAXusBZXdiMRhx5nIiIvXgiIgIiICIiAiIgIiICIiAiIgIiIC5H/UOCOLiKQsaPxWtz+dwf2RFTr/Yv2/3q1h8baiJ0smskZOR3Ufyy2aFxL3F1iQevVEXOt66dfFqwYczD2ykkOeC82PX9tFaOFrOqag2ALQBosovNt+VXufxysgWURdhyRERAREQEREBERB//2Q==">
+
+  <ul>
+    <li>
+      <a href="index.html">Home</a>
+    </li>
+    <li>
+      <a href="contacto.html">Contacto</a>
+    </li>
+  </ul>
+  <hr>
+  <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+        content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+p {
+  color: white;
+}
+
+#enc-3 {
+  color: antiquewhite;
+}
+
+.enc-green {
+  color: floralwhite;
+}
+
+#párrafo {
+  color: brown;
+}
+
+body {
+  background-color: white;
+}
+
+h1 {
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+h2 {
+  text-align: center;
+  color: #463f3a;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  color: aliceblue;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-family: "Oswald";
+  font-size: larger;
+}
+
+@media screen and (max-width:700px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
+
+.nav-link:hover {
+  color: red;
+  border-bottom: 2px solid #9a9a9a;
+  transition: .8s;
+}
+
+.control {
+  margin-top: 1px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 30px;
+}
+
+.search-input {
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  width: 100px;
+  transition: width 0.3s ease;
+  outline: none;
+}
+
+.search-input:focus {
+  width: 200px;
+}
+
+.search-button {
+  background-color: #ff0b0b;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #cc0a0a;
+}
+
+.header-fijo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ }
